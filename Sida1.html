@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        :root {
+            /* colors */
+            --headercolor1: rgba(204, 0, 51, 1);
+            --color2: rgba(255, 255, 255, 1);
+            --color3: rgba(239, 239, 239, 1);
+            --color4: rgba(149, 149, 149, 1);
+            --color5: rgba(70, 70, 70, 1);
+
+            /* --------dimensions----------- */
+
+            /* header */
+            --headerheight: 125px;
+            --headerwidth: auto;
+
+            /* main content */
+            --maincontentheight: 900px;
+
+            /* headermenuspacing */
+
+            --headermenuspacingheight: 50px;
+
+            /* everything */
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            --sideswidth: 18%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header1 {
+            height: var(--headerheight);
+            line-height: var(--headerheight);
+            width: 100%;
+            background-color: var(--headercolor1);
+
+        }
+
+        .title {
+            font-size: 70px;
+        }
+
+        .headermenuspacing {
+            height: var(--headermenuspacingheight);
+            line-height: 50px;
+            width: auto;
+            background-color: var(--headercolor1);
+
+        }
+
+        .headermenuspacingspacing {
+            width: var(--sideswidth);
+            height: var(--headermenuspacingheight);
+            float: left;
+            background-color: var(--headercolor1);
+        }
+
+        .headermenu {
+            width: 64%;
+            height: var(--headermenuspacingheight);
+            background-color: rgb(247, 0, 255);
+        }
+
+        .menubuttons {
+            width: 20%;
+            height: 100%;
+            
+            box-shadow: none;
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+
+        }
+
+        .menubuttons>a {
+            text-decoration: none;
+            color: black;
+            border: 0px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+
+
+        .maincontentbox {
+            min-height: var(--maincontentheight);
+            width: 64%;
+            float: left;
+        }
+
+        .maincontentsides {
+            width: var(--sideswidth);
+            float: left;
+            background-color: var(--color3);
+            min-height: var(--maincontentheight);
+        }
+
+        footer {
+            clear: both;
+            background-color: var(--color5);
+            min-height: 75px;
+            width: auto;
+            line-height: 75px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header1">
+        <div class="title">
+            <center>MIN HEMSIDA</center>
+        </div>
+    </div>
+
+    <div class="headermenuspacing">
+
+        <div class="headermenuspacingspacing">
+
+        </div>
+
+        <div class="headermenu" style="float: left; background-color: rgb(162, 0, 255);">
+           
+            <button class="menubuttons"> <a href=""> HEM </a> </button>
+            <button class="menubuttons"> <a href=""> Om </a> </button>
+            <button class="menubuttons"> <a href=""> Favoritfilmer </a> </button>
+            <button class="menubuttons"> <a href=""> Länkar </a> </button>
+            <button class="menubuttons"> <a href=""> Kontakt </a> </button>
+      
+       
+        </div>
+
+        <div class="headermenuspacingspacing" style="float: right;">
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="maincontentsides">
+
+    </div>
+    <div class="maincontentbox">
+
+    </div>
+    <div class="maincontentsides" style="float: left">
+
+    </div>
+
+    <footer>
+            <div style="margin-left: 18%;">Footer</div>
+    </footer>
+</body>
+
+</html>
