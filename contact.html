@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        :root {
+            /* colors */
+            --headercolor1: rgba(204, 0, 51, 1);
+            --color2: rgba(255, 255, 255, 1);
+            --color3: rgba(239, 239, 239, 1);
+            --color4: rgba(149, 149, 149, 1);
+            --color5: rgba(70, 70, 70, 1);
+            --colorhighlight: rgba(255, 255, 255, 0.863);
+
+            /* --------dimensions----------- */
+
+            /* header */
+            --headerheight: 125px;
+            --headerwidth: auto;
+
+            /* main content */
+            --maincontentheight: 900px;
+
+            /* headermenuspacing */
+
+            --headermenuspacingheight: 50px;
+
+            /* everything */
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            --sideswidth: 18%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header1 {
+            height: var(--headerheight);
+            line-height: var(--headerheight);
+            width: 100%;
+            background-color: var(--headercolor1);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.253), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .title {
+            font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        .headermenuspacing {
+            height: var(--headermenuspacingheight);
+            line-height: 50px;
+            width: auto;
+            background-color: var(--headercolor1);
+
+        }
+
+        .headermenuspacingspacing {
+            width: var(--sideswidth);
+            height: var(--headermenuspacingheight);
+            float: left;
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .headermenu {
+            width: 64%;
+            height: var(--headermenuspacingheight);
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .menubuttons {
+            width: 20%;
+            height: 100%;
+
+            box-shadow: none;
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        .menubuttons:hover {
+            background-color: var(--colorhighlight);
+            text-decoration: underline rgb(255, 255, 255);
+        }
+
+        .menubuttons>a {
+            text-decoration: none;
+            color: black;
+            border: 0px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        .maincontentbox {
+            min-height: var(--maincontentheight);
+            width: 64%;
+            float: left;
+            background-color: white;
+        }
+
+        .maincontentsides {
+            width: var(--sideswidth);
+            float: left;
+            background-color: var(--color3);
+            min-height: var(--maincontentheight);
+            height: 1350px;
+        }
+
+        footer {
+            clear: both;
+            background-color: var(--color5);
+            min-height: 75px;
+            width: auto;
+            line-height: 75px;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: rgba(44, 69, 211, 0.699);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #1c3f80;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 600px;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: gray !important;
+            height: 500px;
+            width: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header1">
+        <div class="title" style="text-align:center; margin: 0 auto;">
+            Hemsida
+        </div>
+    </div>
+
+    <div class="headermenuspacing">
+
+        <div class="headermenuspacingspacing">
+
+        </div>
+
+        <div class="headermenu" style="float: left;">
+
+            <button class="menubuttons"> <a href="index.html"> Hem </a> </button>
+            <button class="menubuttons"> <a href="about.html"> Om</a> </button>
+            <button class="menubuttons"> <a href="favmovies.html"> Favoritfilmer </a> </button>
+            <button class="menubuttons"> <a href="links.html"> Länkar </a> </button>
+            <button class="menubuttons"
+                style="text-decoration: underline rgb(0, 0, 0); border: rgba(0, 0, 0, 0.623) solid 1px;"> <a
+                    href="contact.html"> <strong>Kontakt</strong> </a> </button>
+        </div>
+
+        <div class="headermenuspacingspacing" style="float: right;">
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="maincontentsides">
+
+    </div>
+    <div class="maincontentbox">
+        <p>
+            <strong>
+                <br>
+                <br>
+                <div style="font-size: 25px; text-align: center;">
+                    Kontakt
+                </div>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    Om du har några frågor eller funderingar kan du kontakta mig
+                    <br>
+                    <br>
+                    Fyll i formuläret nedan
+            </strong>
+            <br>
+            <br>
+    </div>
+
+    <div style="width: 60%; justify-content: center; margin: 0 auto;">
+        <div class="container">
+            <form action="">
+                <label for="fname">Förnamn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Ditt namn...">
+
+                <label for="lname">Efternamn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn...">
+
+                <label for="country">Land</label>
+                <select id="country" name="country">
+                    <option value="sweden">Sverige</option>
+                    <option value="norway">Norge</option>
+                    <option value="skane">Skåne (Danmark)</option>
+                </select>
+
+                <label for="subject">Ämne</label>
+                <textarea id="subject" name="subject" placeholder="Skriv något" style="height:200px; font-family: Arial, Helvetica, sans-serif;" ></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        Tips! Du kan också besöka mitt kontor i Helsingborg på adressen nedan:
+    </div>
+    <br>
+    <div style="align-items: center; display: flex; justify-content: center;">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=helsingborg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="yes" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a
+                    href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="maincontentsides" style="float: left">
+
+    </div>
+
+    <footer>
+        <div style="margin-left: 18%;">&copy; Marcus Bermhed - Footer@footer.foot</div>
+    </footer>
+</body>
+
+</html>

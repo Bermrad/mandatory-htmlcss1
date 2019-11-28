@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+
+    <style>
+        :root {
+            /* colors */
+            --headercolor1: rgba(204, 0, 51, 1);
+            --color2: rgba(255, 255, 255, 1);
+            --color3: rgba(239, 239, 239, 1);
+            --color4: rgba(149, 149, 149, 1);
+            --color5: rgba(70, 70, 70, 1);
+            --colorhighlight: rgba(255, 255, 255, 0.863);
+
+            /* --------dimensions----------- */
+
+            /* header */
+            --headerheight: 125px;
+            --headerwidth: auto;
+
+            /* main content */
+            --maincontentheight: 900px;
+
+            /* headermenuspacing */
+
+            --headermenuspacingheight: 50px;
+
+            /* everything */
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            --sideswidth: 18%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header1 {
+            height: var(--headerheight);
+            line-height: var(--headerheight);
+            width: 100%;
+            background-color: var(--headercolor1);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.253), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .title {
+            font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        .headermenuspacing {
+            height: var(--headermenuspacingheight);
+            line-height: 50px;
+            width: auto;
+            background-color: var(--headercolor1);
+
+        }
+
+        .headermenuspacingspacing {
+            width: var(--sideswidth);
+            height: var(--headermenuspacingheight);
+            float: left;
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .headermenu {
+            width: 64%;
+            height: var(--headermenuspacingheight);
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .menubuttons {
+            width: 20%;
+            height: 100%;
+
+            box-shadow: none;
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        .menubuttons:hover {
+            background-color: var(--colorhighlight);
+            text-decoration: underline rgb(0, 0, 0);
+            border: rgba(0, 0, 0, 0.623) solid 1px;
+        }
+
+        .menubuttons>a {
+            text-decoration: none;
+            color: black;
+            border: 0px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        .maincontentbox {
+            min-height: var(--maincontentheight);
+            width: 64%;
+            float: left;
+            background-color: white;
+        }
+
+        .maincontentsides {
+            width: var(--sideswidth);
+            float: left;
+            background-color: var(--color3);
+            min-height: var(--maincontentheight);
+            height: 1000px;
+        }
+
+        footer {
+            clear: both;
+            background-color: var(--color5);
+            min-height: 75px;
+            width: auto;
+            line-height: 75px;
+            color: white;
+        }
+
+        .profilepic {
+            border-radius: 360px;
+            width: 20%;
+
+
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+
+        @media screen and(max-width: 699px) {
+            .video {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @media screen and(min-width: 700px) {
+            .video {
+                width: 560px;
+                height: 315px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header1">
+        <div class="title" style="text-align:center; margin: 0 auto;">
+            Hemsida
+        </div>
+    </div>
+
+    <div class="headermenuspacing">
+
+        <div class="headermenuspacingspacing">
+
+        </div>
+
+        <div class="headermenu" style="float: left;">
+
+            <button class="menubuttons"> <a href="index.html"> Hem </a> </button>
+            <button class="menubuttons"
+                style="text-decoration: underline rgb(0, 0, 0); border: rgba(0, 0, 0, 0.623) solid 1px;"> <a
+                    href="about.html"> <strong>Om</strong> </a> </button>
+            <button class="menubuttons"> <a href="favmovies.html"> Favoritfilmer </a> </button>
+            <button class="menubuttons"> <a href="links.html"> Länkar </a> </button>
+            <button class="menubuttons"> <a href="contact.html"> Kontakt </a> </button>
+
+        </div>
+
+        <div class="headermenuspacingspacing" style="float: right;">
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="maincontentsides">
+
+    </div>
+    <div class="maincontentbox">
+        <p>
+            <strong>
+                <br>
+                <br>
+                <div style="font-size: 25px; text-align: center;">
+                    Lite information om mig
+                </div>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <img class="profilepic"
+                        src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/67297081_10161998153475514_3782794679334993920_n.jpg?_nc_cat=110&_nc_ohc=wuDIcZ3ySBsAQk55-eKtg964_8gQChKcYuF_FURSY_cWksSCqNPxetkrw&_nc_ht=scontent-arn2-1.xx&oh=990d9d3ed45608e2bc2ded6737974fe0&oe=5E454598"
+                        alt="">
+                    <br>
+                    <br>
+                    Jag heter Marcus och gillar Webbutveckling.
+                    <br>
+                    <br>
+                    Jag gillar språket C# och gör lite olika projekt i Unity.
+            </strong>
+            <br>
+            <br>
+
+            <div>
+                här är en video på mitt senaste "work in progress"
+                <br>
+                <br>
+
+                <div class="video">
+                    <iframe src="https://www.youtube-nocookie.com/embed/WGF2rvLMsfA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+    </div>
+    <br>
+    <br>
+
+    </p>
+
+    </div>
+
+    <div class="maincontentsides" style="float: left">
+
+    </div>
+
+    <footer>
+        <div style="margin-left: 18%;">&copy; Marcus Bermhed - Footer@footer.foot</div>
+    </footer>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
 
     <style>
         :root {
@@ -15,6 +15,7 @@
             --color3: rgba(239, 239, 239, 1);
             --color4: rgba(149, 149, 149, 1);
             --color5: rgba(70, 70, 70, 1);
+            --colorhighlight: rgba(255, 255, 255, 0.863);
 
             /* --------dimensions----------- */
 
@@ -31,7 +32,7 @@
 
             /* everything */
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             --sideswidth: 18%;
         }
 
@@ -44,11 +45,14 @@
             line-height: var(--headerheight);
             width: 100%;
             background-color: var(--headercolor1);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.253), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
 
         }
 
         .title {
             font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
         }
 
         .headermenuspacing {
@@ -63,24 +67,36 @@
             width: var(--sideswidth);
             height: var(--headermenuspacingheight);
             float: left;
-            background-color: var(--headercolor1);
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
         }
 
         .headermenu {
             width: 64%;
             height: var(--headermenuspacingheight);
-            background-color: rgb(247, 0, 255);
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
         }
 
         .menubuttons {
             width: 20%;
             height: 100%;
-            
+
             box-shadow: none;
             margin-left: 0px;
             margin-right: 0px;
             float: left;
+            background-color: transparent;
+            border: none;
 
+        }
+
+        .menubuttons:hover {
+            background-color: var(--colorhighlight);
+            text-decoration: underline rgb(0, 0, 0);
+            border: rgba(0, 0, 0, 0.623) solid 1px;
         }
 
         .menubuttons>a {
@@ -90,8 +106,6 @@
             border-radius: 0px;
             margin: 0px;
             padding: 0px;
-
-
         }
 
 
@@ -100,6 +114,7 @@
             min-height: var(--maincontentheight);
             width: 64%;
             float: left;
+            background-color: white;
         }
 
         .maincontentsides {
@@ -115,6 +130,7 @@
             min-height: 75px;
             width: auto;
             line-height: 75px;
+            color: white;
         }
     </style>
 
@@ -123,8 +139,8 @@
 <body>
 
     <div class="header1">
-        <div class="title">
-            <center>MIN HEMSIDA</center>
+        <div class="title" style="text-align:center; margin: 0 auto;">
+            Hemsida
         </div>
     </div>
 
@@ -134,15 +150,16 @@
 
         </div>
 
-        <div class="headermenu" style="float: left; background-color: rgb(162, 0, 255);">
-           
-            <button class="menubuttons"> <a href=""> HEM </a> </button>
-            <button class="menubuttons"> <a href=""> Om </a> </button>
-            <button class="menubuttons"> <a href=""> Favoritfilmer </a> </button>
-            <button class="menubuttons"> <a href=""> Länkar </a> </button>
-            <button class="menubuttons"> <a href=""> Kontakt </a> </button>
-      
-       
+        <div class="headermenu" style="float: left;">
+
+            <button class="menubuttons"
+                style="text-decoration: underline rgb(0, 0, 0); border: rgba(0, 0, 0, 0.623) solid 1px;"> <a
+                    href="index.html"> <strong>Hem</strong> </a> </button>
+            <button class="menubuttons"> <a href="about.html"> Om</a> </button>
+            <button class="menubuttons"> <a href="favmovies.html"> Favoritfilmer </a> </button>
+            <button class="menubuttons"> <a href="links.html"> Länkar </a> </button>
+            <button class="menubuttons"> <a href="contact.html"> Kontakt </a> </button>
+
         </div>
 
         <div class="headermenuspacingspacing" style="float: right;">
@@ -158,6 +175,32 @@
 
     </div>
     <div class="maincontentbox">
+        <p>
+            <strong>
+                <br>
+                <br>
+                <div style="font-size: 25px; text-align: center;">
+                    Välkommen till min hemsida!
+                </div>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    Hoppas du gillar den
+                    <br>
+                    <br>
+                    Här är min favoritdikt:
+            </strong>
+    </div>
+    <br>
+    <br>
+    <div class="poem"
+        style="width: 25%; height: auto; background-color:rgba(128, 128, 128, 0.171); margin: 0 auto; font-size: fit-content;">
+        <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab itaque hic repellendus
+            mollitia magnam officiis porro eos expedita ea. Dolor consequuntur voluptate quisquam in aliquid
+            delectus aperiam ab amet?</i>
+
+    </div>
+    </p>
 
     </div>
     <div class="maincontentsides" style="float: left">
@@ -165,7 +208,7 @@
     </div>
 
     <footer>
-            <div style="margin-left: 18%;">Footer</div>
+        <div style="margin-left: 18%;">&copy; Marcus Bermhed - Footer@footer.foot</div>
     </footer>
 </body>
 

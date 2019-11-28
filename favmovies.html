@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        :root {
+            /* colors */
+            --headercolor1: rgba(204, 0, 51, 1);
+            --color2: rgba(255, 255, 255, 1);
+            --color3: rgba(239, 239, 239, 1);
+            --color4: rgba(149, 149, 149, 1);
+            --color5: rgba(70, 70, 70, 1);
+            --colorhighlight: rgba(255, 255, 255, 0.863);
+
+            /* --------dimensions----------- */
+
+            /* header */
+            --headerheight: 125px;
+            --headerwidth: auto;
+
+            /* main content */
+            --maincontentheight: 900px;
+
+            /* headermenuspacing */
+
+            --headermenuspacingheight: 50px;
+
+            /* everything */
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            --sideswidth: 18%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header1 {
+            height: var(--headerheight);
+            line-height: var(--headerheight);
+            width: 100%;
+            background-color: var(--headercolor1);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.253), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .title {
+            font-size: 70px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        .headermenuspacing {
+            height: var(--headermenuspacingheight);
+            line-height: 50px;
+            width: auto;
+            background-color: var(--headercolor1);
+
+        }
+
+        .headermenuspacingspacing {
+            width: var(--sideswidth);
+            height: var(--headermenuspacingheight);
+            float: left;
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .headermenu {
+            width: 64%;
+            height: var(--headermenuspacingheight);
+            background-color: rgba(204, 0, 51, 1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(204, 0, 51, 1), rgba(0, 0, 0, 0.26));
+
+        }
+
+        .menubuttons {
+            width: 20%;
+            height: 100%;
+
+            box-shadow: none;
+            margin-left: 0px;
+            margin-right: 0px;
+            float: left;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        .menubuttons:hover {
+            background-color: var(--colorhighlight);
+            text-decoration: underline rgb(255, 255, 255);
+        }
+
+        .menubuttons>a {
+            text-decoration: none;
+            color: black;
+            border: 0px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        .maincontentbox {
+            min-height: var(--maincontentheight);
+            width: 64%;
+            float: left;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .maincontentsides {
+            width: var(--sideswidth);
+            float: left;
+            background-color: var(--color3);
+            min-height: var(--maincontentheight);
+        }
+
+        footer {
+            clear: both;
+            background-color: var(--color5);
+            min-height: 75px;
+            width: auto;
+            line-height: 75px;
+            color: white;
+        }
+
+        .movietable {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 25%;
+            border: 1px solid #ddd;
+
+
+        }
+
+        .movietablebox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2dc;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header1">
+        <div class="title" style="text-align:center; margin: 0 auto;">
+            Hemsida
+        </div>
+    </div>
+
+    <div class="headermenuspacing">
+
+        <div class="headermenuspacingspacing">
+
+        </div>
+
+        <div class="headermenu" style="float: left;">
+
+            <button class="menubuttons"> <a href="index.html"> Hem </a> </button>
+            <button class="menubuttons"> <a href="about.html"> Om</a> </button>
+            <button class="menubuttons"
+                style="text-decoration: underline rgb(0, 0, 0); border: rgba(0, 0, 0, 0.623) solid 1px;"> <a
+                    href="favmovies.html"> <strong>Favoritfilmer</strong> </a> </button>
+            <button class="menubuttons"> <a href="links.html"> Länkar </a> </button>
+            <button class="menubuttons"> <a href="contact.html"> Kontakt </a> </button>
+
+        </div>
+
+        <div class="headermenuspacingspacing" style="float: right;">
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="maincontentsides">
+
+    </div>
+
+    <div class="maincontentbox">
+        <br>
+        <br>
+        <strong>
+            <p>
+                <div style="font-size: 25px; text-align: center;">
+                    Mina favoritfilmer i en tabell
+                </div>
+                <br>
+                <br>
+            </p>
+        </strong>
+        <div class="movietablebox">
+            <table class="movietable">
+                <tr>
+                    <th>Film</th>
+                    <th>Skådespelare</th>
+                    <th>IMDB-score*</th>
+                </tr>
+                <tr>
+                    <td>Kung Pow</td>
+                    <td>Okänd</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Die Hard 5</td>
+                    <td>Bruce Willis</td>
+                    <td>12/15</td>
+                </tr>
+                <tr>
+                    <td>Family Guy</td>
+                    <td>Peter Griffin</td>
+                    <td>5/7</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div style="float: left; margin-right: 75px; color: rgba(128, 128, 128, 0.658); font-size: small;">
+            *imdb = imaginary movie database
+        </div>
+    </div>
+
+
+
+    <div class="maincontentsides" style="float: left">
+
+    </div>
+
+    <footer>
+        <div style="margin-left: 18%;">&copy; Marcus Bermhed - Footer@footer.foot</div>
+    </footer>
+</body>
+
+</html>

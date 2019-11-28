@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .movietable {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 25%;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+        }
+
+        .movieboxformovies {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .movietablebox {
+
+            width: 45%;
+            float: left;
+        }
+
+        .movietablebox2 {
+            background-color: rgb(3, 168, 173);
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <?php include "./header.shtml" ?>
+
+    Hello, today is <?php echo date('l, F jS, Y'); ?>.
+
+    <div class="movieboxformovies">
+        <div class="movietablebox2">
+            <h2>Zebra Striped Table</h2>
+            <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd)
+                table rows:</p>
+
+            <div class="movietablebox">
+                <table class="movietable">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="movietablebox2">
+
+            <div class="movietablebox" style="float: right;">
+                <table class="movietable">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <?php include "./footer.html" ?>
+</body>
+
+</html>
